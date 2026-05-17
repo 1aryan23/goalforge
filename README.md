@@ -3,6 +3,11 @@
 > A complete enterprise-grade SaaS application for employee goal management, manager approvals, and quarterly performance tracking.
 
 ---
+## 🌐 Live Demo
+
+- Frontend: [GoalForge App](https://goalforge-seven.vercel.app)
+- Backend API: [GoalForge API](https://goalforge-x8rc.onrender.com)
+---
 
 ## 🖼️ Preview
 
@@ -159,8 +164,8 @@ VITE_API_URL=http://localhost:5000/api
 ```env
 PORT=5000
 NODE_ENV=development
-DATABASE_URL=postgresql://postgres:password@localhost:5432/goalforge
-JWT_SECRET=your_super_secret_key_here
+DATABASE_URL=your_database_url
+JWT_SECRET=your_jwt_secret
 JWT_EXPIRES_IN=7d
 FRONTEND_URL=http://localhost:5173
 ```
@@ -222,14 +227,14 @@ npm run build
 |----------|---------|
 | Numeric | `achievement / target × 100` |
 | Percentage | `achievement / target × 100` |
-| Timeline | `achievement / target × 100` |
+| Timeline | `completion vs deadline` |
 | Zero-based | `achievement == 0 ? 100% : 0%` |
 
 ---
 
-## 🏆 Hackathon-Ready Features
+## ✨ Platform Highlights
 
-- ✅ Zero backend dependency (mock mode)
+- ✅ Resilient frontend architecture with fallback authentication
 - ✅ 3 fully distinct role experiences
 - ✅ Beautiful dark enterprise UI
 - ✅ Complete goal lifecycle (Draft → Submit → Approve → Lock → Check-in)
@@ -243,4 +248,4 @@ npm run build
 
 ---
 
-*Built with ⚡ by GoalForge Team*
+*Designed and developed by Aryan Thakur*
