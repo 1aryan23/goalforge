@@ -157,17 +157,17 @@ Or click the **Quick Demo Access** buttons on the login screen.
 
 ### `frontend/.env`
 ```env
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=https://goalforge-x8rc.onrender.com/api
 ```
 
 ### `backend/.env`
 ```env
 PORT=5000
-NODE_ENV=development
+NODE_ENV=production
 DATABASE_URL=your_database_url
 JWT_SECRET=your_jwt_secret
 JWT_EXPIRES_IN=7d
-FRONTEND_URL=http://localhost:5173
+FRONTEND_URL=https://goalforge-seven.vercel.app
 ```
 
 ---
@@ -208,12 +208,12 @@ npm run build
 # Deploy dist/ to Vercel or run: vercel --prod
 ```
 
-### Backend → Render / Railway
+### Backend → Render 
 1. Push `backend/` to a Git repo
 2. Set environment variables on the platform
 3. Start command: `node server.js`
 
-### Database → Neon / Supabase
+### Database → Neon 
 1. Create a PostgreSQL project
 2. Run `database/schema.sql` in the SQL editor
 3. Run `database/seed.sql` for demo data
